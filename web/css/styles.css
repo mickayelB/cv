@@ -1,0 +1,226 @@
+html {
+    background-image: url('../img/blue.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    max-width: 80%;
+    background-image: url('../img/kh.png');
+    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header {
+    background-color: rgb(243,243,243);
+    padding-bottom: 30px;
+}
+
+footer{
+    background-color: rgb(243,243,243);
+    padding: 30px 0;
+}
+
+footer p {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header h1{
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 50px;
+}
+
+header p{
+    max-width: 65%;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.nav-header {
+    max-width: 54%;
+    margin: 0 auto;
+}
+
+.nav-header li {
+    list-style: none;
+    float: left;
+    border-right-style: solid;
+    border-color: white;
+}
+
+.nav-header li:last-child{
+    border-right: none;
+}
+
+ul {
+    border-radius: 20px;
+
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 21px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #3D9AD9;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.boldAbout {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #314253;
+}
+
+.about{
+    background-color: #314253;
+    color:white;
+    max-width: 37%;
+    text-align: center;
+    transform: skew(-35deg);
+    margin-left: 100px;
+}
+
+.about h2{
+    transform: skew(35deg);
+}
+
+.aboutMe p{
+    margin-left: 130px;
+}
+
+img{
+    margin-top:10px;
+    border-right: solid #00BFFF 6px;
+    width: 30%;
+}
+
+.premierblock section{
+    max-width: 50%;
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.premierblock aside {
+    max-width: 50%;
+    display: inline-block;
+    margin-left: 100px;
+    border-top: solid #00BFFF 4px;
+    border-bottom: solid #00BFFF 4px;
+    margin-top: 10px;
+}
+
+.deuxiemeblock{
+    background-color: #314253;
+    color: white;
+    overflow: hidden;
+}
+
+p.test {
+    word-wrap: break-word;
+}
+
+.skills{
+    background-color: #314253;
+    color:white;
+    max-width: 14%;
+    text-align: center;
+    transform: skew(-35deg);
+    margin-left: 160px;
+}
+
+.skills h2{
+    transform: skew(35deg);
+}
+
+.exp {
+    background-color: #3D9AD9;
+    color: white;
+    max-width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: -50px;
+}
+
+.exp h2 {
+    padding: 5px 0;
+}
+
+.experience, .education {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.experience p, .education p{
+    clear: both;
+    margin-left: 50px;
+}
+
+.DateIn {
+    display: inline-block;
+    float: right;
+    margin-right: 400px;
+    margin-top: 22px;
+    background-color: #3D9AD9;
+    border-radius: 9px;
+    max-width: 14%;
+    text-align: center;
+    padding: 5px;
+}
+
+.school {
+    display: inline-block;
+    color: orangered;
+}
+
+.fa.fa-terminal {
+    font-size: 30px;
+}
+
+.ita {
+    font-style: italic;
+}
+
+#goingTop {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    font-size: 55px;
+    box-sizing: content-box;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 64px;
+    background-color: white;
+}
+
+#goingTop a {
+    text-decoration: none;
+    color: black;
+}
+
+input[type="submit"]{
+    padding: 15px 24px;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: white;
+    border-color: #314253;
+    background-color: #314253;
+}

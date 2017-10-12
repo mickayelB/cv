@@ -1,0 +1,29 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+
+    <h2><i class="fa fa-user-circle" aria-hidden="true"></i> Contactez moi par ici!</h2>
+
+    <form method="post">
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <label for="name" id="name">Votre nom: </label>
+            <input type="text" name="name" placeholder="Enter a name...">
+            <label for="firstName" id="firstName">Votre prénom: </label>
+            <input type="text" name="firstName" placeholder="Enter a firstname...">
+            <label for="mail" id="mail">Votre email: </label>
+            <input type="email" name="mail" placeholder="Enter a mail...">
+            <label for="phone" id="phone">Votre téléphone: </label>
+            <input type="text" maxlength="10" name="phone">
+        </fieldset>
+
+        <fieldset>
+            <legend>Votre message: </legend>
+            <label for="subject" id="subject">Sujet du message: </label>
+            <input type="text" name="subject" placeholder="Enter a subject...">
+            <label for="message" id="message">Votre message: </label>
+            <textarea rows="8" cols="30" name="message" placeholder="Your message..."></textarea>
+        </fieldset>
+        <input type="submit" value="Envoyer">
+    </form>
+
+{% endblock %}

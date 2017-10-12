@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="{{ asset('styles.css', 'css') }}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <title>Mon CV</title>
+  </head>
+  <body>
+    <div id="goingTop">
+      <a id="goTop" href>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </a>
+    </div>
+    <header>
+      <h1>MIKAËL BELLAÏCHE</h1>
+      <p>DEVELOPPEUR WEB JUNIOR</p>
+      <nav class="nav-header">
+        <ul>
+          <li><a href="{{ path('home') }}">Accueil</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="{{ path('formCV') }}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    <footer>
+      <small>
+        <p>Si mes compétences vous intéresse, n'hésitez pas à me laisser vos coordonnées via ce <a href="{{ path('formCV') }}" class="formCV">formulaire</a> ou cliquant directement en haut de la page</p>
+      </small>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="{{ asset('main.js', 'js') }}"></script>
+  </body>
+</html>

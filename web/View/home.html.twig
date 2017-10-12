@@ -1,0 +1,44 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <div class="premierblock">
+        <section class="aboutMe" id="aboutMe">
+            <div class="about"><h2>About Me</h2></div>
+            <p><span class="boldAbout">Web</span><i> A venir...</i></p>
+            <p><span class="boldAbout">Nationalité</span> Français</p>
+            <p><span class="boldAbout">Téléphone</span> 07.63.21.72.25</p>
+            <p><span class="boldAbout">Ville</span> Tournan en Brie 77220</p>
+            <p><span class="boldAbout">Mail</span> mikael.bellaiche@bbox.fr</p>
+        </section>
+        <aside>
+            <img src="{{ asset('profil.jpg', 'img') }}">
+            <p class="test">Je suis un développeur web junior.</p>
+        </aside>
+    </div>
+
+    <section>
+        <div class="skills" id="skills"><h2>Skills</h2></div>
+        <!--  CANVAS A FAIRE -->
+    </section>
+    <div class="deuxiemeblock">
+    <section class="experience" id="experience">
+        <div class="exp"><h2>Experience</h2></div>
+
+        {% for exp in experience %}
+            <h3 class="school"><i class="fa fa-terminal" aria-hidden="true"></i> {{ exp.CompanyName }}</h3><span class="DateIn">{{ exp.DateIn }}</span>
+            <p class="ita">{{ exp.GeoExp }}</p>
+            <p>{{ exp.Descrip }}</p>
+        {% endfor %}
+    </section>
+    <section class="education" id="education">
+        <div class="exp"><h2>Education</h2></div>
+        {% for form in forms %}
+            <h3 class="school"><i class="fa fa-terminal" aria-hidden="true"></i> {{ form.SchoolName }}</h3><span class="DateIn">{{ form.DateGraduate }}</span>
+            <p class="ita">{{ form.Geo }}</p>
+            <p>{{ form.FormName }}</p>
+        {% endfor %}
+    </section>
+    </div>
+
+{% endblock %}
